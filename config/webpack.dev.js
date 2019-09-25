@@ -7,6 +7,5 @@ module.exports = merge.smart(baseWebpackConfig, {
   output: {
     filename: 'js/[name].[hash:8].js'
   },
-  module: {
-  }
+  module: {}
 })
