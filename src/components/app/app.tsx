@@ -1,8 +1,8 @@
-import React from 'react';
-import './app.css';
+import React from 'react'
+import './app.css'
 
 const App: React.FC = () => {
-  return (<div>hello, world</div>);
-};
+  return (<div>hello, world</div>)
+}
 
-export default App;
+export default App
