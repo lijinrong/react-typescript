@@ -17,7 +17,7 @@ const bundleAnalyzerReport = argv.report // 根据命令参数是否含有 'repo
 
 const webpackConfig = {
   entry: {
-    app: './src/entries/index.tsx'
+    app: './src/index.tsx'
   },
   output: {
     filename: 'js/[name].bundle.js',

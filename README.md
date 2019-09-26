@@ -1,5 +1,5 @@
 # react-typescript
-react+typescript初始化项目
+react+typescript初始化项目, 适合单页面应用
 
 环境要求：
 Git >= 2.13.2
