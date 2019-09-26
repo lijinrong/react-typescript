@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const config = require('./config')
 const APP_PATH = path.resolve(__dirname, '../src')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin')
@@ -109,11 +110,14 @@ const webpackConfig = {
     }
   },
   plugins: [
+    new UglifyJSPlugin({
+      parallel: true
+    }),
     new HtmlWebpackPlugin({
       inject: true,
       template: config.indexPath,
       showErrors: true,
-      chunks: ['app']
+      chunks: ['commons', 'vendor', 'app']
     }),
     new CleanWebpackPlugin(),
     new ExtractTextPlugin({
@@ -130,7 +134,31 @@ const webpackConfig = {
           }
         } : {}
       })
-    ]
+    ],
+    splitChunks: {
+      chunks: 'async',
+      minSize: 30000,
+      maxSize: 0,
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: '~',
+      name: true,
+      cacheGroups: {
+        commons: {
+          name: 'commons',
+          minSize: 1,
+          chunks: 'all',
+          priority: 0
+        },
+        vendor: {
+          name: 'vendor',
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'all',
+          priority: 10
+        }
+      }
+    }
   }
 }
 
