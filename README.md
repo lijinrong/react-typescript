@@ -27,15 +27,23 @@ Git >= 2.13.2
 │   │   └── app
 │   │       ├── app.css
 │   │       └── app.tsx
-│   ├── entries
-│   │   └── index.tsx
 │   ├── etc
 │   │   ├── const.js
 │   │   └── index.js
+│   ├── index.tsx
 │   ├── lib
 │   │   └── flexible.js
 │   ├── locales
 │   │   └── en.js
+│   ├── pages
+│   │   ├── home
+│   │   │   ├── app.css
+│   │   │   └── app.tsx
+│   │   └── pageA
+│   │       ├── app.css
+│   │       └── app.tsx
+│   ├── router
+│   │   └── index.ts
 │   ├── styles
 │   │   └── reset.css
 │   └── utils
