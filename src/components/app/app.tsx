@@ -2,7 +2,7 @@ import React from 'react'
 import './app.css'
 
 const App: React.FC = () => {
-  return (<div>hello, world</div>)
+  return (<div>PageA</div>)
 }
 
 export default App
