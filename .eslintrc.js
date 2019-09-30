@@ -26,7 +26,7 @@ module.exports = {
     },
     // 配置自定义规则
     rules: {
-        'prettier/prettier': 1,
+        'prettier/prettier': 'error',
         '@typescript-eslint/indent': ['error', 4, { VariableDeclarator: 4, SwitchCase: 1 }],
         '@typescript-eslint/no-unused-vars': 0,
         '@typescript-eslint/interface-name-prefix': 0,
