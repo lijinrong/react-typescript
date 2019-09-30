@@ -13,6 +13,5 @@
     "semi": false,
     "bracketSpacing": true,
     "jsxBracketSameLine": true,
-    "arrowParens": "always",
-    "parser": "typescript"
+    "arrowParens": "always"
 }
