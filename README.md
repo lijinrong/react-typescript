@@ -5,8 +5,8 @@ react+typescript 初始化项目, 适合单页面应用
 环境要求：
 Git >= 2.13.2
 
-目录结构：
-.
+目录结构：  
+.  
 ├── README.md  
 ├── assets.d.ts  
 ├── commitlint.config.js  
