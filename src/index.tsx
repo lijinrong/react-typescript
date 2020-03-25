@@ -20,4 +20,14 @@ class MainComponent extends React.Component {
     }
 }
 
-ReactDOM.render(<MainComponent />, document.getElementById('root'))
+const render = () => {
+    ReactDOM.render(<MainComponent />, document.getElementById('root'))
+}
+
+render()
+
+if (module.hot) {
+    module.hot.accept('./router/', () => {
+        render()
+    })
+}

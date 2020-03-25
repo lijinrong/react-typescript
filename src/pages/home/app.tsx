@@ -3,8 +3,8 @@ import './app.css'
 
 const PageA: React.FC = () => {
     return (
-        <div>
-            <p>Hellow, React</p>
+        <div className="test">
+            <p>Hello, React123345</p>
         </div>
     )
 }
