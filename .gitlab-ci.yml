@@ -3,17 +3,22 @@
 # Learn more about this keyword here: https://docs.gitlab.com/ee/ci/yaml/README.html#script
 
 # After committing this template, visit CI/CD > Jobs to see the script output.
+image: node:latest
+
 stages: 
   - install
   - build
   - notify
 
-install-build:
-  image: node:latest
+install:
   stage: install
   script:
     # provide a shell script as argument for this keyword.
     - npm install
+
+build: 
+  stage: build
+  script:
     - npm run build
 
 notify:
