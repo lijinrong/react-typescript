@@ -12,7 +12,7 @@ install:
   stage: install
   script:
     # provide a shell script as argument for this keyword.
-    - npm i install
+    - npm install
 
 build: 
   stage: build
