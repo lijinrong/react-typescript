@@ -3,13 +3,13 @@
 # Learn more about this keyword here: https://docs.gitlab.com/ee/ci/yaml/README.html#script
 
 # After committing this template, visit CI/CD > Jobs to see the script output.
-image: node:latest
 
 stages: 
   - build
   - notify
 
 build-install:
+  image: node:latest
   stage: build
   script:
     # provide a shell script as argument for this keyword.
