@@ -10,7 +10,7 @@ stages:
   - notify
 
 build-install:
-  stage: install
+  stage: build
   script:
     # provide a shell script as argument for this keyword.
     - npm install
