@@ -3,7 +3,7 @@
 # Learn more about this keyword here: https://docs.gitlab.com/ee/ci/yaml/README.html#script
 
 # After committing this template, visit CI/CD > Jobs to see the script output.
-stage: 
+stages: 
   - install
   - build
   - notify
