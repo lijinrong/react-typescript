@@ -8,17 +8,12 @@ stages:
   - build
   - notify
 
-install:
+install-build:
   image: node:latest
   stage: install
   script:
     # provide a shell script as argument for this keyword.
     - npm install
-
-build: 
-  image: node:latest
-  stage: build
-  script:
     - npm run build
 
 notify:
