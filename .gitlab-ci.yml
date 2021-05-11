@@ -11,6 +11,11 @@ stages:
 build-install:
   image: node:latest
   stage: build
+  cache: 
+    key: ${CI_BUILD_REF_NAME}
+    paths:
+        - node_modules/
+        - dist/
   script:
     # provide a shell script as argument for this keyword.
     - npm install
