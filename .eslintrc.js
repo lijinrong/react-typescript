@@ -44,7 +44,6 @@ module.exports = {
         '@typescript-eslint/triple-slash-reference': ['error', { path: 'always', types: 'never', lib: 'never' }],
         'no-console': ['warn', { allow: ['warn', 'error'] }],
         eqeqeq: ['warn', 'always'],
-        'typescript/class-name-casing': 2,
         // React相关校验规则
         'react/jsx-indent': [2, 4],
         'react/jsx-no-undef': [2, { allowGlobals: true }],

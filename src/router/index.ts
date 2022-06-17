@@ -1,11 +1,13 @@
-import PageA from '../pages/pageA/app'
-import Home from '../pages/home/app'
+import { lazy } from 'react'
 
-interface route {
+const Home = lazy(() => import('../pages/home/app'))
+const PageA = lazy(() => import('../pages/pageA/app'))
+
+interface Route {
     path: string
     component: any
 }
 
-var routes: route[] = [{ path: '/', component: Home }, { path: '/PageA', component: PageA }]
+const routes: Route[] = [{ path: '/', component: Home }, { path: '/PageA', component: PageA }]
 
 export default routes
